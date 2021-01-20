@@ -11,7 +11,7 @@ class QR_Gen(object):
     @staticmethod
     def qr_generator(text):
         qr_code=pyqrcode.create(text)
-        file_name="QR Code Result"
+        file_name="QR Code Results"
         save_path=os.path.join(os.path.expanduser('~'),'Desktop')
         name=f"{save_path}{file_name}.png"
         qr_code.png(name,scale=10)
